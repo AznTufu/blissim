@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "title": "Clavier mécanique TKL",
+        "price": 89.99,
+        "description": "Format compact sans pavé numérique",
+        "image": "images/general-img-square.png"
+    },
+    {
+        "id": 2,
+        "title": "Clavier sans fil 75 %",
+        "price": 119.9,
+        "description": "Format compact sans pavé numérique",
+        "image": "images/general-img-square.png"
+    },
+    {
+        "id": 3,
+        "title": "Clavier gaming RGB",
+        "price": 69.5,
+        "description": "Format compact sans pavé numérique",
+        "image": "images/general-img-square.png"
+    },
+    {
+        "id": 4,
+        "title": "Clavier ergonomique split",
+        "price": 149,
+        "description": "Format compact sans pavé numérique",
+        "image": "images/general-img-square.png"
+    },
+    {
+        "id": 5,
+        "title": "Clavier 60 % minimaliste",
+        "price": 59.99,
+        "description": "Format compact sans pavé numérique",
+        "image": "images/general-img-square.png"
+    }
+]

@@ -19,6 +19,14 @@
         {% endif %}
     </head>
     <body>
+        {% for type, messages in app.flashes %}
+            {% for message in messages %}
+                <div style="max-width: 600px; margin: 10px auto; padding: 10px; border-radius: 4px; text-align: center; background: #d1e7dd; color: #0f5132;">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endfor %}
+
         {% block body %}{% endblock %}
     </body>
 </html>

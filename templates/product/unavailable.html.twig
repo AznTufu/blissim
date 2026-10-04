@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Service indisponible{% endblock %}
+
+{% block body %}
+    <div style="max-width: 600px; margin: 40px auto; text-align: center;">
+        <h1>Service indisponible</h1>
+        <p>{{ message }}</p>
+        <a href="{{ path('product_index') }}">Réessayer</a>
+    </div>
+{% endblock %}

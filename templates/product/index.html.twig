@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1 style="text-align: center;">Liste des Produits</h1>
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; max-width: 1800px; margin: auto">
+        {% if products is empty %}
+            <p>Aucun produit disponible.</p>
+        {% else %}
+            {% for product in products %}
+                <div style="border: 1px solid #ccc; padding: 15px; width: 200px;">
+                    <img src="{{ product.image }}" alt="{{ product.title }}" style="width: 100px; height: 100px; object-fit: contain;">
+                    <h3>{{ product.title }}</h3>
+                    <p>{{ product.price }} €</p>
+                    <a href="{{ path('product_show', {id: product.id}) }}">Voir la fiche</a>
+                </div>
+            {% endfor %}
+        {% endif %}
+    </div>
+{% endblock %}

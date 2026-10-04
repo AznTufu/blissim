@@ -5,6 +5,19 @@ framework:
     # Note that the session will be started ONLY if you read or write from it.
     session: true
 
+    http_client:
+        scoped_clients:
+            fake_store.client:
+                base_uri: '%env(FAKE_STORE_API_URL)%'
+                headers:
+                    Accept: 'application/json'
+                timeout: 3
+                max_duration: 5
+                retry_failed:
+                    max_retries: 1
+                    delay: 500
+                    multiplier: 2
+
     #esi: true
     #fragments: true
 
