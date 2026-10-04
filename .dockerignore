@@ -1,0 +1,8 @@
+.git
+.claude
+.env.local
+.env.*.local
+var/
+vendor/
+public/assets/
+assets/vendor/
